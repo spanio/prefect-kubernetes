@@ -14,7 +14,7 @@ import pytest
 from kubernetes.client.exceptions import ApiException
 from kubernetes.config import ConfigException
 from prefect.client.schemas import FlowRun
-from prefect.docker import get_prefect_image_name
+from prefect.utilities.dockerutils import get_prefect_image_name
 from prefect.exceptions import (
     InfrastructureError,
     InfrastructureNotAvailable,

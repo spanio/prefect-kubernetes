@@ -94,7 +94,7 @@ from typing import TYPE_CHECKING, Any, Dict, Generator, Optional, Tuple
 
 import anyio.abc
 from prefect.blocks.kubernetes import KubernetesClusterConfig
-from prefect.docker import get_prefect_image_name
+from prefect.utilities.dockerutils import get_prefect_image_name
 from prefect.exceptions import (
     InfrastructureError,
     InfrastructureNotAvailable,
